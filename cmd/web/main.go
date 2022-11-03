@@ -34,7 +34,7 @@ func main() {
 	infoLog := log.New(os.Stdout, "INFO\t", log.Ldate|log.Ltime)
 	errorLog := log.New(os.Stderr, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
 
-	databaseUrl := "postgres://postgres:adialtair1250@localhost:5432/snippetbox"
+	databaseUrl := "postgres://postgres:isaf@localhost:5432/snippetbox"
 
 	db, err := pgxpool.Connect(context.Background(), databaseUrl)
 
